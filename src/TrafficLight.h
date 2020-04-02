@@ -30,6 +30,12 @@ private:
 // can be either „red“ or „green“. Also, add the private method „void cycleThroughPhases()“. 
 // Furthermore, there shall be the private member _currentPhase which can take „red“ or „green“ as its value. 
 
+enum TrafficLightPhase
+{
+    red,
+    green 
+};
+
 class TrafficLight : public TrafficObject
 {
 public:
