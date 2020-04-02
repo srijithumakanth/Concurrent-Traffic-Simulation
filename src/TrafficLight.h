@@ -4,6 +4,7 @@
 #include <mutex>
 #include <deque>
 #include <condition_variable>
+
 #include "TrafficObject.h"
 
 // forward declarations to avoid include cycle
@@ -62,6 +63,7 @@ private:
     std::mutex _mutex;
 
     TrafficLightPhase _currentPhase;
+    MessageQueue<TrafficLightPhase> _queue;
 };
 
 #endif
