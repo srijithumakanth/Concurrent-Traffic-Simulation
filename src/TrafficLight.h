@@ -66,7 +66,7 @@ private:
     std::mutex _mutex;
 
     TrafficLightPhase _currentPhase;
-    MessageQueue<TrafficLightPhase> _queue;
+    MessageQueue<TrafficLightPhase> _trafficLightPhaseQueue;
 };
 
 #endif
